@@ -1,0 +1,52 @@
+nav {
+    margin: 3em 6em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 17%;
+}
+.logo img {
+    width: 100%;
+}
+nav a {
+    color: #FF6060;
+    text-decoration: none;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links a {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 0 0 0 3em;
+}
+.activeClassName {
+    color: #FF6060;
+    text-decoration: underline !important;
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        margin: 2em 1.5em 0;
+    }
+    .logo {
+        width: 45%;
+    }
+    .links a {
+        font-size: 1em;
+        padding: 0 0 0 .5em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        width: 35%;
+    }
+    .links a {
+        font-size: .9em;
+    }
+}
