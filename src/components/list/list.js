@@ -1,35 +1,31 @@
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import Card from '../card/card.js';
 
-function Logement() {
+function List() {
 
     const [actualData, setActualData] = useState([]);
 
-    const { idproperty } = useParams();
     const url = "http://localhost:3000/datas/data.json";
 
     async function fetchData() {
-        
         try {
             const response = await fetch(url);
             const json = await response.json();
-            const data = json.filter(x => x.id === idproperty);
-            setActualData(data);
+            setActualData(json);
         } catch(err) {
             console.log(err);
         }
     }
-    console.log(actualData);
+    
     useEffect(() => {
         fetchData();
     }, []);
 
     return (
         <>
-            <span></span>
-            <p>I am the logement page of {idproperty}</p>
+            {actualData.map(card => <Card data={card} key={card.id} />)}
         </>
     );
 }
-
-export default Logement;
+export default List;

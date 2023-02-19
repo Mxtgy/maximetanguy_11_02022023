@@ -1,0 +1,19 @@
+section.list_section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 1.2em 0;
+    margin: 2em 0;
+}
+
+@media screen and (max-width: 550px){
+    section.list_section {
+        flex-direction: column;
+        background-color: #FFF;
+        padding: 0;
+        margin: .5em 0;
+    }
+}
