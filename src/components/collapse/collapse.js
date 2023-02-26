@@ -4,15 +4,16 @@ import chevron from '../../assets/arrow.svg';
 function Collapse(props) {
 
     const summary = props.name;
-    const text = props.text;
+    const texts = props.text;
+    const page = props.page;
 
     return (
-        <details className={styles.details}>
+        <details className={ page === "logement" ? `${styles.details} ${styles.logement}` : `${styles.details}` }>
             <summary>
                 <span>{summary}</span>
                 <img src={chevron} alt='chevron'></img>
             </summary>
-            <p>{text}</p>
+            { typeof texts == "object" && texts.length > 1 ? <p>{Object.values(texts).map( (text, index) => <span key={index}>{text}</span>)}</p> : <p>{texts}</p> }
         </details>
     );
 }

@@ -1,0 +1,18 @@
+.stars {
+    margin: 1em 0;
+    text-align: right;
+    
+}
+.star {
+    margin: 0 0 0 .2em;
+}
+
+@media screen and (max-width: 500px) {
+    .stars {
+        width: 40%;
+        text-align: left;
+    }
+    .star {
+        width: 15%;
+    }
+}

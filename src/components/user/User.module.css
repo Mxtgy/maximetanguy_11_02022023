@@ -1,0 +1,35 @@
+.user_container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.user {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #FF6060;
+    margin-right: .8em;
+}
+.user span {
+    display: block;
+    margin: .1em 0;
+}
+
+.user_picture {
+    border-radius: 50%;
+    width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+    .user_container {
+        width: 50%;
+    }
+    .user {
+        font-size: .9em;
+    }
+    .user_picture {
+        width: 25%;
+    }
+}

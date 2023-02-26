@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: #000;
     width: 100%;
     display: flex;
@@ -7,24 +7,28 @@ footer {
     justify-content: center;
     padding: 3em 0 1em;
 }
-footer img {
+.footer .logo {
     margin-bottom: 2em;
     width: 20%;
+    text-align: center;
+}
+.footer .logo img {
+    width: 100%;
     max-width: 150px;
 }
-footer span {
+.footer span {
     color: #FFF;
 }
 
 @media screen and (max-width: 650px) {
-    footer {
+    .footer {
         padding: 3em 0;
     }
-    footer img {
+    .footer .logo {
         margin-bottom: 2em;
         width: 40%;
     }
-    footer span {
+    .footer span {
         font-size: .9em;
     }
 }
