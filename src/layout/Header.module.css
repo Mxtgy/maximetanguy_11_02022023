@@ -1,4 +1,4 @@
-nav {
+.nav {
     margin: 3em 6em 0;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@ nav {
 .logo img {
     width: 100%;
 }
-nav a {
+.nav a {
     color: #FF6060;
     text-decoration: none;
 }
@@ -30,7 +30,7 @@ nav a {
 }
 
 @media screen and (max-width: 650px) {
-    nav {
+    .nav {
         margin: 2em 1.5em 0;
     }
     .logo {

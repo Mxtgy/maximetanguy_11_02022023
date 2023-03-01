@@ -1,6 +1,6 @@
 import './App.css';
-import Router from './Router';
-import Layout from './layout/layout';
+import Router from './Router.js';
+import Layout from './layout/Layout.js';
 
 
 

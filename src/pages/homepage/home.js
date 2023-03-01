@@ -1,5 +1,5 @@
-import Banner from '../../components/banner/banner.js';
-import List from '../../components/list/list.js';
+import Banner from '../../components/banner/Banner.js';
+import List from '../../components/list/List.js';
 import styles from './Home.module.css';
 
 function Home() {

@@ -1,5 +1,5 @@
-import Header from './header';
-import Footer from './footer';
+import Header from './Header.js';
+import Footer from './Footer.js';
 import styles from './Layout.module.css';
 
 function Layout({children}) {

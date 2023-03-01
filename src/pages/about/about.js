@@ -1,5 +1,5 @@
-import Banner from '../../components/banner/banner.js';
-import Collapse from '../../components/collapse/collapse.js';
+import Banner from '../../components/banner/Banner.js';
+import Collapse from '../../components/collapse/Collapse.js';
 import styles from './About.module.css';
 
 function About() {

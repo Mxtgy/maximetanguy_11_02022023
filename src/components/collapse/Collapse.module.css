@@ -1,7 +1,7 @@
-details.details {
+.details {
     margin: 2em auto;
 }
-details.details summary {
+.details summary {
     cursor: pointer;
     background-color: #FF6060;
     border-radius: 5px;
@@ -14,13 +14,13 @@ details.details summary {
     justify-content: space-between;
     font-size: 1.1em;
 }
-details.details summary img {
+.details summary img {
     width: 1.5em;
 }
-details[open].details summary img {
+.details[open] summary img {
     transform: rotate(180deg);
 }
-details.details p {
+.details p {
     font-weight: 400;
     padding: 1.5em .5em 1em;
     color: #FF6060;
@@ -42,7 +42,7 @@ details.details p {
 }
 
 @media screen and (max-width: 1100px) {
-    details.details, .details.logement {
+    .details, .details.logement {
         width: 100%;
     }
     .details.logement {
@@ -51,14 +51,14 @@ details.details p {
 }
 
 @media screen and (max-width: 700px) {
-    details.details, .details.logement {
+    .details, .details.logement {
         width: 100%;
     }
-    details.details summary {
+    .details summary {
         font-size: 1em;
         padding: .5em .5em .5em 1em;
     }
-    details.details p {
+    .details p {
         font-size: 1em;
         line-height: 1.3em;
     }

@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
-import Slider from "../../components/slider/slider.js";
-import Tags from "../../components/tags/tags.js";
-import User from "../../components/user/user.js";
-import Rating from "../../components/rating/rating.js";
-import Collapse from '../../components/collapse/collapse.js';
+import Slider from "../../components/slider/Slider.js";
+import Tags from "../../components/tags/Tags.js";
+import User from "../../components/user/User.js";
+import Rating from "../../components/rating/Rating.js";
+import Collapse from '../../components/collapse/Collapse.js';
 import styles from './Logement.module.css';
 
 function Logement() {
