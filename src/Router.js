@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/homepage/home.js';
-import About from './pages/about/about.js';
-import Logement from './pages/logement/logement.js';
-import Error from './pages/error/error.js';
+import Home from './pages/homepage/Home.js';
+import About from './pages/about/About.js';
+import Logement from './pages/logement/Logement.js';
+import Error from './pages/error/Error.js';
 
 function Router() {
     return (

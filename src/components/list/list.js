@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import Card from '../card/card.js';
+import Card from '../card/Card.js';
 
 function List() {
 

@@ -4,12 +4,12 @@ import styles from './Banner.module.css';
 
 function Banner(props) {
 
-    const letype = props.type;
+    const type = props.type;
 
     return (
-        <section className={letype === 'banner-home' ? `${styles.banner}` : `${styles.banner} ${styles.about}`}>
-            <img src={letype === 'banner-home' ? `${banner_home}` : `${banner_about}`} alt={letype}></img>
-            {letype === 'banner-home' && <h1><span>Chez vous,</span> partout et ailleurs</h1>}
+        <section className={ type === 'banner-home' ? `${styles.banner}` : `${styles.banner} ${styles.about}` }>
+            <img src={ type === 'banner-home' ? `${banner_home}` : `${banner_about}` } alt={type}></img>
+            { type === 'banner-home' && <h1><span>Chez vous,</span> partout et ailleurs</h1> }
         </section>
     );
 }
